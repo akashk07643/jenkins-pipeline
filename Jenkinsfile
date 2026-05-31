@@ -1,8 +1,8 @@
 pipeline{
     agent any
     parameters{
-        string(name: 'Branch', defaultValue: 'main')
-        string(name: 'version', defaultValue: '1.0')
+        string(name: 'BRANCH', defaultValue: 'main')
+        string(name: 'VERSION', defaultValue: '1.0')
     }
     environment{
         APP_Name ="MyApp"
@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                echo "Checking out ${parameters.Branch}"
+                echo "Checking out ${parameters.BRANCH}"
             }
         }
         stage('build'){
