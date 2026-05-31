@@ -30,7 +30,7 @@ pipeline{
         }
         stage('artifact name'){
             steps{
-                echo "Packageing version ${parameters.version}"
+                echo "Packageing version ${parameters.VERSION}"
             }
         }
     }
