@@ -5,7 +5,7 @@ pipeline{
         string(name: 'VERSION', defaultValue: '1.0')
     }
     environment{
-        APP_Name ="MyApp"
+        APP_Name = "MyApp"
     }
     stages{
         stage('checkout'){
